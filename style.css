@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+h1{
+    border-bottom-style: groove;
+    width: 105%;
+    color: white;
+    font-style: italic;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    display: grid;
+}
+  
+#apiKeyInput{
+    width: 100%;
+    height: 17px;
+    margin: 10px;
+    border-radius: 10px 47px;
+    border-color: #cfa8a8 #452f2f;
+}
+
+#movieTitleInput{
+    width: 100%;
+    height: 17px;
+    margin: 10px;
+    border-radius: 10px 47px;
+    border-color: #cfa8a8 #452f2f;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 0 10px;
+    width: 200px;
+}
+
+button {
+    place-self: center;
+    width: 20%;
+    padding: 10px 20px;
+    background-color: rgb(3 52 52);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20.5px;
+    height: 43px;
+}
+
+
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin: 20px auto;
+}
+
+.error {
+    color: rgb(255, 10, 10);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 200px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
